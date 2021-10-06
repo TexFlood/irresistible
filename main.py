@@ -2,7 +2,6 @@ import math
 
 from ResistorNetwork import ResistorNetwork
 import resistor_list
-from pyfiglet import Figlet
 
 
 def generate_all_possible_resistances(avail_resistors: list):
@@ -41,20 +40,18 @@ def generate_all_possible_resistances(avail_resistors: list):
                 resistor_configs[series] = ResistorNetwork(r1, r2, False, True)
                 resistor_count += 1
     return resistor_configs
-fig = Figlet(font='banner3')
-print(fig.renderText('Resistor'))
-print(fig.renderText("      Man"))
+
+
 print('Welcome to ResistorMan! \n\n')
 print('Calculating resistor values...\n\n')
 resistor_networks = generate_all_possible_resistances(resistor_list.avail_resistors)
 
-print('Given the data provided, '+
-    str(len(resistor_networks)) + ' possible resistor combinations are possible.\n\n'
-)
+print('Given the data provided, ' +
+      str(len(resistor_networks)) + ' possible resistor combinations are possible.\n\n'
+      )
 
 
 def find_closest_resistor(resistance, resistor_dict: dict):
-    delta_dict = {}
     lowest_delta_i = 1E99
     best_resistor_network = None
     resistor_list = list(resistor_dict)
@@ -78,8 +75,7 @@ def print_closest_resistor(resistance, resistor_dict: dict):
     print(' -------------------------------------')
 
 
-
-while(True):
+while True:
     requested_resistance = float(input('Please enter a resistance value that you would like to obtain: '))
 
     print_closest_resistor(requested_resistance, resistor_networks)
