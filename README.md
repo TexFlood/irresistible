@@ -1,4 +1,4 @@
-# irresistible
+# Irresistible
 
 A simple script to find a resistance based on a list of resistors given. 
 
@@ -10,4 +10,4 @@ For example:
 
 - (R1+R2+R3+R4)
 
-https://i.imgur.com/WEajSjZ.gif
+![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
