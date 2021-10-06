@@ -42,7 +42,7 @@ def generate_all_possible_resistances(avail_resistors: list):
     return resistor_configs
 
 
-print('Welcome to ResistorMan! \n\n')
+print('Welcome to Irresistible! \n\n')
 print('Calculating resistor values...\n\n')
 resistor_networks = generate_all_possible_resistances(resistor_list.avail_resistors)
 
