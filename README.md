@@ -10,4 +10,4 @@ For example:
 
 - (R1+R2+R3+R4)
 
-![Alt Text](https://imgur.com/WEajSjZ)
+![Alt Text](https://i.imgur.com/WEajSjZ.gif)
